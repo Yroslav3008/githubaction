@@ -1,0 +1,24 @@
+{
+  "name": "githubaction",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yroslav3008/githubaction.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Yroslav3008/githubaction/issues"
+  },
+  "homepage": "https://github.com/Yroslav3008/githubaction#readme",
+  "dependencies": {
+    "axios": "^1.18.1"
+  }
+}
