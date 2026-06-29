@@ -8,6 +8,6 @@ jobs:
       - name: our Var & secrets
         run: |
           echo '${{ vars.STATUS }}'
-          eho '${{ secrets.PASSWORD }}'
+          echo '${{ secrets.PASSWORD }}'
 
           
