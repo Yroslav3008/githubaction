@@ -7,6 +7,18 @@ on:
         type: string
         required: true 
         default: "Hello World"
+      selectCustoms:
+        description: Select Value
+        type: choice
+        required: true
+        options:
+          - Value1
+          - Value2
+        default: "Value1"
+      checkCustom:
+        description: Checkbox
+        type: boolean
+        required: false
 jobs:
   run-first-command:
     runs-on: ubuntu-latest
@@ -16,3 +28,5 @@ jobs:
       - name: event Vars
         run: | 
           echo "Title: ${{inputs.titleCustom}}"
+          echo "Title: ${{inputs.selectCustoms}}"
+          echo "Title: ${{inputs.checkCustom}}"
