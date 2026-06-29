@@ -1,0 +1,13 @@
+name: Nineth Workflow
+on: 
+  repository_dispatch: 
+    types: [test]
+    
+jobs:
+  run-first-command:
+    runs-on: ubuntu-latest
+    steps:
+      
+      - name: event Vars
+        run: echo ${{ toJson(github) }}
+          

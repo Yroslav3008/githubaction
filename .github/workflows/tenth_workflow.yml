@@ -1,0 +1,16 @@
+name: Nineth Workflow
+on: push
+    
+jobs:
+  run-first-command:
+    runs-on: ubuntu-latest
+    steps:
+      
+      - name: Context and Expressions
+        id: context-express
+        run: |
+          echo ${{ toJson(runner)}}
+          echo ${{ toJson(github) }}
+          echo ${{ toJson(job) }}
+          echo ${{ toJson(steps) }}
+          
