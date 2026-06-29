@@ -1,6 +1,6 @@
 name: Ten Workflow
 on: push
-    
+run-name: "Display Context Info"
 jobs:
   run-first-command:
     runs-on: ubuntu-latest
