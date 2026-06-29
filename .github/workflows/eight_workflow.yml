@@ -15,5 +15,4 @@ jobs:
         run: echo "Some text"
       - name: event Vars
         run: | 
-          echo $GITHUB_SHA
-          echo $GITHUB_REF
+          echo "Title: ${{inputs.titleCustom}}"
