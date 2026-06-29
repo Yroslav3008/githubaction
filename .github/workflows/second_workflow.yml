@@ -1,0 +1,21 @@
+name: second Workflow 
+on: push
+
+jobs:
+  run-first-command:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Display Node Version on Ubuntu
+        run:  node -v
+          
+  run-pararel-command:
+    runs-on: windows-latest
+    steps:
+       - name: Display Node Version on wind
+         run:  node -v
+  run-second-command:
+    runs-on: macos-latest
+    needs: [run-first-command, run-pararel-command]
+    steps:
+      - name: DisplayNode Version on Macos
+        run: node -v
