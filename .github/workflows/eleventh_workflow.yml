@@ -8,6 +8,8 @@ jobs:
     env:
       JOB_CUSTOM_VAR: 1
     steps:
+      - name: Set the Vars
+        run: echo "NEW_CUSTOM_VAR=NEW VALUE" >> "$GITHUB_ENV"
       - name: Vars
         env:
           CUSTOM_VAR: STEP 1
@@ -17,3 +19,4 @@ jobs:
           echo '${{ github.ref }}'
           echo $WF_CUSTOM_VAR
           echo $JOB_CUSTOM_VAR
+          echo $NEW_CUSTOM_VAR
