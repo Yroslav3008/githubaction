@@ -1,0 +1,13 @@
+name: Seventh Workflow
+on: 
+  workflow_dispatch
+jobs:
+  run-first-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display Some text
+        run: echo "Some text"
+      - name: event Vars
+        run: | 
+          echo $GITHUB_SHA
+          echo $GITHUB_REF
