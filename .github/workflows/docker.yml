@@ -13,4 +13,7 @@ jobs:
     steps:
       - name: Displey v
         run: node -v
-
+      - name: Print new image
+        uses: docker://node:18-buster-slim
+        with:
+          args: -v
