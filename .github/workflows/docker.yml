@@ -4,6 +4,9 @@ on: push
 jobs:
   test_docker_container:
     runs-on: ubuntu-latest
+    services:
+      customMySQL:
+        image: mysql
     container: 
       image: node:12
       env:
@@ -13,7 +16,11 @@ jobs:
     steps:
       - name: Displey v
         run: node -v
+
       - name: Print new image
         uses: docker://node:18-buster-slim
         with:
           args: -v
+
+      - name: Displey service image
+        run: echo '${{toJson(job.services)}}'  
