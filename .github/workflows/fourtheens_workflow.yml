@@ -8,5 +8,5 @@ jobs:
       - name: Use checkout
         uses: actions/checkout@v4
       - name: Use Custom Action
-        uses: ./.github/actions/cache-node-modules
+        uses: ./.github/workflows/actions/cache-node-modules
     
