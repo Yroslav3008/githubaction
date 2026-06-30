@@ -9,4 +9,6 @@ jobs:
         uses: actions/checkout@v4
       - name: Use Custom Action
         uses: ./.github/workflows/actions/cache-node-modules
+        with:
+          caching: 'false'
     
